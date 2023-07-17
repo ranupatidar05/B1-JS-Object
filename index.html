@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JS Object</title>
+    </head>
+    <body>
+
+        <script>
+            var student = {
+                //P:v
+                'name':"Ranu",
+                "surname":'Patidar',
+                address : 'jeeran',
+                friend:['pooja','reena',"riya",'riva'], // js object contain  array 
+                teachers:[{
+                            name:'anil dollar',
+                            contact: "978987979",
+                        },{
+                            name: 'amit singh',
+                            contact: "9865234112"
+                        }], // array of object
+                sister:{ // js object 
+                    name:"Alfiya",
+                    contact:'9994685090',
+                    'hobies':['reading',"writting",'dancing']    
+                        }
+            }; // js object
+            //Object.member
+            console.log(student.name);
+            console.log(student.surname);
+            console.log(student.address);
+            console.log(student.friend[0]);
+            console.log(student.name+" have "+student.friend.length+" friend");
+            console.log(student.name+' have '+student.teachers.length+' teachers');
+            console.log(student.sister.name+ ' ' +student.sister.contact+' '+student.sister.hobies );
+           for(var i=0; i< student.teachers.length;i++){
+                console.log(student.teachers[i].name+' '+student.teachers[i].contact);
+            }
+            
+            var x = ['ranu',student] // array contain js object
+        </script>
+    </body>
+</html>
